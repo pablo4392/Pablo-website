@@ -1,0 +1,54 @@
+.body-page {
+    margin: 0;
+    padding: 0;
+    background-color: #393e46;
+    color: #eeeeee;
+}
+
+.header {
+    height: 100vh;
+    width: 100%;
+    background-image: url('https://images.pexels.com/photos/160107/pexels-photo-160107.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.banner {
+    margin: 0;
+    background-color: rgba(10, 25, 49, 0.6);
+    display: flex;
+    flex-direction: row;
+}
+
+.menu {
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.navigation {
+    text-decoration: none;
+    font-size: 20px;
+    color: #eeeeee;
+}
+
+.overlay {
+    height: 100%;
+    background-color: rgba(10, 25, 49, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-title {
+    margin: 0;
+    font-size: 90px;
+    color: #0c4271;
+}
+
+.web-color {
+    color: #eba83a;
+}

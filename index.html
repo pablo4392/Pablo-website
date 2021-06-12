@@ -4,175 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pablo's Website</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/profile.css">
+    <link rel="stylesheet" href="./assets/css/portfolio.css">
+    <link rel="stylesheet" href="./assets/css/education.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 </head>
-<body>
+<body class="body-page" id='bodyPage'>
+
     <!--Header-->
-    <section class="header">
-        <div class="row">
-            <div class="col-sm-2 col-md-2 col-lg-2">
-                <div class="logo">
-                    <img src="./help-files/Logo.png" alt="logo de la pagina">
-                </div>
+    <section class="header" id="header">
+        <div class="banner">
+            <div class="col-6">
+                Pablo Carreño 
             </div>
-            <div class="col-sm-10 col-md-10 col-lg-10">
-                <div class="menu">
-                    <ul class="nav">
-                        <li><a href="#profile">About me</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
+            <ul class='menu col-6' id="menu">
+                <li>
+                    <a href="#profile" class="navigation">
+                        About me
+                    </a>
+                </li>
+                <li>
+                    <a href="#portfolio" class="navigation">
+                        Portfolio
+                    </a>
+                </li>
+                <li>
+                    <a href="#education" class="navigation">
+                        Education
+                    </a>
+                </li>
+            </ul>
         </div>
-    </section>
-    <!--Main section-->
-    <section class="text-center">
-        <div class="main-section">
-            <div class="overlay principal-title">
-                <h1 class="title-color principal-title-size">Hi... <br> I am a web developer</h1>
-            </div>
+        <div class="overlay">
+            <h1 class="first-title"> <span class="web-color"> WEB </span> DEVELOPER </h1>
         </div>
     </section>
 
     <!--Profile-->
-    <section class="text-center space-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-md-4 col-lg-4">
-                    <div class="profile-picture"></div>
-                </div>
-                <div class="col-sm-12 col-md-8 col-lg-8">
-                    <h3 id="profile">My name is Pablo</h3>
-                    <p class="space-top">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum sed, quas tempore nobis totam quo beatae repudiandae, eum obcaecati aliquam omnis. Voluptas iure sint excepturi aut saepe. Magni, eaque incidunt!
-                    </p>
-                    <div class="space-top">
-                        <a class="button" href="./help-files/CV PABLO CARREÑO.pdf" target="_blank">Go to CV</a>
-                    </div>
-                </div> 
+    <section class="profile" id="profile">
+        <div class="profile-card">
+            <div class="col-4">
+                <div class="profile-picture"></div>
             </div>
-        </div>
-    </section>
-
-    <!--Projects-->
-    <section class="space-section border-top">
-        <div class="container">
-            <h2 id="projects" class="text-center title-section">Featured works</h2>
-            <!--First project-->
-            <div class="row">
-                <div class="col-md-4 col-lg-3">
-                    <img class="project-img" src="https://images.pexels.com/photos/147413/twitter-facebook-together-exchange-of-information-147413.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="app img">
-                </div>
-                <div class="col-md-8 col-lg-9">
-                    <h3>Generic App</h3>
-                    <span class="tag space-p">
-                        <h5>Oct, 2020</h5>
-                    </span>
-                    <p class="space-p p-size">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. A illo accusamus, harum doloremque obcaecati accusantium exercitationem magnam mollitia veniam ut ea voluptates reprehenderit consequatur adipisci quis asperiores laboriosam dignissimos sit?
-                    </p>
-                </div>
-            </div>
-            <!--Second project-->
-            <div class="row">
-                <div class="col-md-4 col-lg-3">
-                    <img class="project-img" src="https://images.pexels.com/photos/35177/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="instagram img">
-                </div>
-                <div class="col-md-8 col-lg-9">
-                    <h3>Instagram App</h3>
-                    <span class="tag space-p">
-                        <h5>Nov, 2020</h5>
-                    </span>
-                    <p class="space-p p-size">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quisquam debitis quos recusandae, nulla tenetur. Omnis unde dolorum, dicta soluta magni sequi est rem nisi illo repudiandae ex suscipit totam!
-                    </p>
-                </div>
-            </div>
-            <!--Third project-->
-            <div class="row">
-                <div class="col-md-4 col-lg-3">
-                    <img class="project-img" src="https://images.pexels.com/photos/267482/pexels-photo-267482.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="facebook img">
-                </div>
-                <div class="col-md-8 col-lg-9">
-                    <h3>Facebook App</h3>
-                    <span class="tag space-p">
-                        <h5>Dec, 2020</h5>
-                    </span>
-                    <p class="space-p p-size">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, consectetur et, suscipit ut consequatur provident, doloremque veniam voluptates tenetur totam exercitationem porro? Dicta sed cum vero autem, sapiente deleniti voluptas?
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!--Services-->
-    <section class="services-bg space-section">
-        <h2 id="services" class="text-center title-color">Services</h2>
-        <div class="row">
-            <!--First service-->
-            <div class="col-md-3">
-                <div class="card">
-                    <div class="text-center item">
-                        <i class="fas fa-mobile-alt"></i>                    
-                    </div>
-                    <h3 class="text-center">Apps</h3>
-                    <p class="space-p">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti voluptates quidem neque rem libero eos cum similique nesciunt aut quisquam ipsum nulla, excepturi praesentium sed ullam corporis tempora eligendi id.
-                    </p>
-                </div>
-            </div>
-            <!--Second service-->
-            <div class="col-md-3">
-                <div class="card">
-                    <div class="text-center item">
-                        <i class="fas fa-laptop-code"></i>
-                    </div>
-                    <h3 class="text-center">Code</h3>
-                    <p class="space-p">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti voluptates quidem neque rem libero eos cum similique nesciunt aut quisquam ipsum nulla, excepturi praesentium sed ullam corporis tempora eligendi id.
-                    </p>
-                </div>
-            </div>
-            <!--Third service-->
-            <div class="col-md-3">
-                <div class="card">
-                    <div class="text-center item">
-                        <i class="fas fa-palette"></i>
-                    </div>
-                    <h3 class="text-center">Design</h3>
-                    <p class="space-p">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti voluptates quidem neque rem libero eos cum similique nesciunt aut quisquam ipsum nulla, excepturi praesentium sed ullam corporis tempora eligendi id.
-                    </p>
-                </div>
-            </div>
-            <!--Fourth service-->
-            <div class="col-md-3">
-                <div class="card">
-                    <div class="text-center item">
-                        <i class="fas fa-laptop-medical"></i>
-                    </div>
-                    <h3 class="text-center">Support</h3>
-                    <p class="space-p">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti voluptates quidem neque rem libero eos cum similique nesciunt aut quisquam ipsum nulla, excepturi praesentium sed ullam corporis tempora eligendi id.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!--Footer-->
-    <section class="footer">
-        <div class="container">
-            <h2 id="contact" class="text-center title-section">Contact</h2>
-            <div class="icons">
+            <div class="col-8">
+                <h3 id="profile">My name is Pablo</h3>
+                <p class="space-top">
+                    Hi! my name is Pablo Carreño I am a web developer from Mexico, Puebla city.
+                </p>
                 <div class="social-media">
                     <a class="media" href="https://www.facebook.com/" target="blank_">
-                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-github"></i>
                     </a>                    
                 </div>
                 <div class="social-media">
@@ -180,22 +65,177 @@
                         <i class="fab fa-linkedin-in"></i>
                     </a>
                 </div>
-                <div class="social-media">
-                    <a class="media" href="https://www.instagram.com/" target="blank_">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </div>
-                <div class="social-media">
-                    <a class="media" href="https://twitter.com/?lang=es" target="blank_">
-                        <i class="fab fa-twitter"></i>
-                    </a>                    
+                <div class="space-top">
+                    <a class="button" href="./help-files/CV PABLO CARREÑO.pdf" target="_blank">Go to CV</a>
                 </div>
             </div>
         </div>
-        <div class="foot">
-            <i class="far fa-copyright"></i>
-            <h5>All rigths reserved</h5>
+    </section>
+
+    <!-- Portfolio -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="principal-tab" data-bs-toggle="tab" data-bs-target="#principal" type="button" role="tab" aria-controls="home" aria-selected="true">Principal</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="javascript-tab" data-bs-toggle="tab" data-bs-target="#javascript" type="button" role="tab" aria-controls="profile" aria-selected="false">Javascript</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="react-tab" data-bs-toggle="tab" data-bs-target="#react" type="button" role="tab" aria-controls="contact" aria-selected="false">React</button>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="principal" role="tabpanel" aria-labelledby="home-tab">
+
+                    <div class="row g-0 bg-dark bg-gradient position-relative mt-3">
+                        <div class="col-md-6 mb-md-0 p-md-4">
+                          <img class="portfolio-img" src="https://images.pexels.com/photos/5426409/pexels-photo-5426409.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="w-100" alt="...">
+                        </div>
+                        <div class="col-md-6 p-4 ps-md-0">
+                          <h3 class="mt-0 portfolio-title">Columns with stretched link</h3>
+                          <p class="portfolio-description" >Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
+                          <a href="#" class="btn btn-outline-primary">Go App</a>
+                        </div>                      
+                    </div>
+
+                </div>
+                <div class="tab-pane fade" id="javascript" role="tabpanel" aria-labelledby="profile-tab">
+
+                    <div class="row g-0 position-relative mt-4 portfolio-card-bg">
+                        <div class="col-md-6 mb-md-0 p-md-4">
+                          <img class="portfolio-img" src="./assets/help-files/english teacher website.png" class="w-100" alt="website picture">
+                        </div>
+                        <div class="col-md-6 p-4 ps-md-0">
+                          <h3 class="mt-0 portfolio-title">English teacher website</h3>
+                          <p class="portfolio-description" >Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
+                          <a href="https://mrs-cristy.netlify.app/" target="_blank" class="btn btn-outline-primary">Go App</a>
+                        </div>                      
+                    </div>
+
+                    <div class="row g-0 position-relative mt-4 portfolio-card-bg">
+                        <div class="col-md-6 mb-md-0 p-md-4">
+                          <img class="portfolio-img" src="./assets/help-files/cars crud app.png" class="w-100" alt="cars crud app picture">
+                        </div>
+                        <div class="col-md-6 p-4 ps-md-0">
+                          <h3 class="mt-0 portfolio-title">Simple CRUD app</h3>
+                          <p class="portfolio-description" >Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
+                          <a href="https://crud-cars-pcr.netlify.app/" target="_blank" class="btn btn-outline-primary">Go App</a>
+                        </div>                      
+                    </div>
+
+                    <div class="row g-0 position-relative mt-4 portfolio-card-bg">
+                        <div class="col-md-6 mb-md-0 p-md-4">
+                          <img class="portfolio-img" src="./assets/help-files/simple-clock.png" class="w-100" alt="simple clock picture">
+                        </div>
+                        <div class="col-md-6 p-4 ps-md-0">
+                          <h3 class="mt-0 portfolio-title">Simple clock app</h3>
+                          <p class="portfolio-description" >Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
+                          <a href="https://pcr-simple-clock.netlify.app/" target="_blank" class="btn btn-outline-primary">Go App</a>
+                        </div>                      
+                    </div>
+
+                </div>
+                <div class="tab-pane fade" id="react" role="tabpanel" aria-labelledby="contact-tab">
+
+                    <div class="row g-0 position-relative mt-4 portfolio-card-bg">
+                        <div class="col-md-6 mb-md-0 p-md-4">
+                          <img class="portfolio-img" src="./assets/help-files/Rick and Morthy app.png" class="w-100" alt="rick and mothy png">
+                        </div>
+                        <div class="col-md-6 p-4 ps-md-0">
+                          <h3 class="mt-0 portfolio-title">Rick and morthy app</h3>
+                          <p class="portfolio-description" >Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
+                          <a href="https://rickandmorthy-appv2.netlify.app/" target="_blank" class="btn btn-outline-primary">Go App</a>
+                        </div>                      
+                    </div>
+
+                    <div class="row g-0 position-relative mt-4 portfolio-card-bg">
+                        <div class="col-md-6 mb-md-0 p-md-4">
+                          <img class="portfolio-img" src="./assets/help-files/simple weather app.png" class="w-100" alt="weather app png">
+                        </div>
+                        <div class="col-md-6 p-4 ps-md-0">
+                          <h3 class="mt-0 portfolio-title">Simple weather app</h3>
+                          <p class="portfolio-description" >Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
+                          <a href="https://weather-app-pcr.netlify.app/" target="_blank" class="btn btn-outline-primary">Go App</a>
+                        </div>                      
+                    </div>
+
+                    <div class="row g-0 position-relative mt-4 portfolio-card-bg">
+                        <div class="col-md-6 mb-md-0 p-md-4">
+                          <img class="portfolio-img" src="./assets/help-files/tic tac toe app.png" class="w-100" alt="weather app png">
+                        </div>
+                        <div class="col-md-6 p-4 ps-md-0">
+                          <h3 class="mt-0 portfolio-title">Tick tac toe game</h3>
+                          <p class="portfolio-description" >Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
+                          <a href="https://tictactoe-pcr-app.netlify.app/" target="_blank" class="btn btn-outline-primary">Go App</a>
+                        </div>                      
+                    </div>
+
+                    <div class="row g-0 position-relative mt-4 portfolio-card-bg">
+                        <div class="col-md-6 mb-md-0 p-md-4">
+                          <img class="portfolio-img" src="./assets/help-files/quotes app.png" class="w-100" alt="weather app png">
+                        </div>
+                        <div class="col-md-6 p-4 ps-md-0">
+                          <h3 class="mt-0 portfolio-title">Quotes app</h3>
+                          <p class="portfolio-description" >Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
+                          <a href="https://quotes-app-pcr.netlify.app/" target="_blank" class="btn btn-outline-primary">Go App</a>
+                        </div>                      
+                    </div>
+
+                </div>
+              </div>
         </div>
     </section>
+
+    <!--Education-->
+    <section class="education mt-5" id="education">
+            <div class="card-education" id="htmlCard">
+                <div class="header-card-education">
+                    <i class="fab fa-html5 icon-education mb-3"></i>
+                    <h3 class="text-center">HTML 5</h3>
+                </div>
+            </div>
+        
+            <div class="card-education" id="cssCard">
+                <div class="header-card-education">
+                    <i class="fab fa-css3-alt icon-education mb-3"></i>                  
+                    <h3 class="text-center">CSS 3</h3>
+                </div>
+            </div>
+
+            <div class="card-education" id="bootCard">
+                <div class="header-card-education">
+                    <i class="fab fa-bootstrap icon-education mb-3"></i>
+                    <h3 class="text-center"> Bootstrap </h3>
+                </div>
+            </div>
+            
+            <div class="card-education" id="jsCard">
+                <div class="header-card-education">
+                    <i class="fab fa-js icon-education mb-3"></i>
+                    <h3 class="text-center">Java Script</h3>
+                </div>
+            </div>
+
+            <div class="card-education" id="reactCard">                
+                <div class="header-card-education">
+                    <i class="fab fa-react icon-education mb-3"></i>            
+                    <h3 class="text-center">React</h3>
+                </div>
+            </div>
+
+            <div class="card-education">
+                <div class="header-card-education">                
+                    <i class="fas fa-tools icon-education mb-3"></i>
+                    <h3 class="text-center">Computer repair</h3>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="./assets/script/js.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </body>
 </html>

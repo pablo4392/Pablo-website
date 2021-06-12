@@ -1,0 +1,52 @@
+/*==========================Footer================================*/
+.icons {
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.social-media {
+    height: 50px;
+    width: 50px;
+    border: solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+.media {
+    text-decoration: none;
+    color: #000;
+}
+.foot {
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    padding: 1.5px;
+    color: #fff;
+    font-size: 15px;
+}
+/*==========================Components================================*/
+.button {
+    text-decoration: none;
+    background-color: #000;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 7px;
+}
+.tag {
+    background-color: #000;
+    color: #fff;
+    font-size: 11px;
+    border-radius: 20px;
+    padding: 5px;
+    display: inline-block;
+}
+
+.title-section {
+    background-color: rgba(0, 0, 0, 0.75);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: #fff;
+}

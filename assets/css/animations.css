@@ -1,0 +1,79 @@
+/* ---------------HEADER ANIMATION --------------- */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.typing-effect {
+    width: 20ch;
+    font-family: monospace;
+    animation: typing 2s steps(20), blink 0.5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 5px solid;
+}
+
+/* -----------ICONS ANIMATION------------- */
+
+.icon-box-github {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+.icon-box-github:hover {
+    background-color: #161616;
+    transition: 1s;
+}
+
+.github-icon {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 50px;
+    transition: 1s;
+}
+
+.github-icon:hover {
+    color: #FDFAF6;
+    transition: 1s;
+}
+
+.icon-box-linkedin {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(253, 250, 246, 0.5);
+    text-decoration: none;
+    border-radius: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+.icon-box-linkedin:hover {
+    background-color: #2867B2;
+    transition: 1s;
+}
+
+.linkedin-icon {
+    font-size: 40px;
+    color: rgba(40, 102, 178, 0.7);
+    transition: 1s;
+}
+
+.linkedin-icon:hover {
+    color: #FDFAF6;
+    transition: 1s;
+}

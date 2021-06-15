@@ -4,22 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pablo's Website</title>
+    <link rel="stylesheet" href="./assets/css/animations.css">
     <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/profile.css">
     <link rel="stylesheet" href="./assets/css/portfolio.css">
     <link rel="stylesheet" href="./assets/css/education.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
 </head>
-<body class="body-page" id='bodyPage'>
-
+<body class="body-page">
     <!--Header-->
     <section class="header" id="header">
         <div class="banner">
-            <div class="col-6">
-                Pablo Carreño 
+            <div class="col-6 logo-box">
+                <div class="my-logo">
+                    <i class="fab fa-d-and-d logo-icon"></i>
+                    <span class="my-name">PABLO</span>CR
+                </div>
             </div>
             <ul class='menu col-6' id="menu">
                 <li>
@@ -40,33 +44,34 @@
             </ul>
         </div>
         <div class="overlay">
-            <h1 class="first-title"> <span class="web-color"> WEB </span> DEVELOPER </h1>
+            <div class="typing-effect first-title">
+                I AM A<span class="web-color"> WEB DEVELOPER </span>
+            </div>
         </div>
     </section>
 
     <!--Profile-->
     <section class="profile" id="profile">
         <div class="profile-card">
-            <div class="col-4">
+            <div class="col-4 pic-section">
                 <div class="profile-picture"></div>
             </div>
-            <div class="col-8">
-                <h3 id="profile">My name is Pablo</h3>
-                <p class="space-top">
+            <div class="col-8 body-profile">
+                <p class="profile-description">
                     Hi! my name is Pablo Carreño I am a web developer from Mexico, Puebla city.
                 </p>
-                <div class="social-media">
-                    <a class="media" href="https://www.facebook.com/" target="blank_">
-                        <i class="fab fa-github"></i>
+                <div class="icons-tab mt-3 mb-3">                    
+                    <a class="icon-box-github" target="_blank" href="https://github.com/pablo4392?tab=repositories">
+                        <i class="fab fa-github github-icon"></i>
                     </a>                    
-                </div>
-                <div class="social-media">
-                    <a class="media" href="https://mx.linkedin.com/" target="blank_">
-                        <i class="fab fa-linkedin-in"></i>
+                    <a class="icon-box-linkedin" target="_blank" href="https://www.linkedin.com/in/pablo-carre%C3%B1o-ram%C3%ADrez-aa381411a/">
+                        <i class="fab fa-linkedin-in linkedin-icon"></i>
                     </a>
                 </div>
-                <div class="space-top">
-                    <a class="button" href="./help-files/CV PABLO CARREÑO.pdf" target="_blank">Go to CV</a>
+                <div class="btn-group" role="group" aria-label="Basic outlined example">
+                    <a class="btn btn-outline-light" target="_blank" href="./assets/help-files/personal/CV PABLO CARREÑO.pdf">Personal CV</a>
+                    <a class="btn btn-outline-light" target="_blank" href="./assets/help-files/personal/html certificacion.pdf">HTML certification</a>
+                    <a class="btn btn-outline-light" target="_blank" href="./assets/help-files/personal/css certificacion.pdf">CSS certification</a>
                 </div>
             </div>
         </div>
@@ -74,165 +79,177 @@
 
     <!-- Portfolio -->
     <section class="portfolio" id="portfolio">
-        <div class="container">
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link active" id="principal-tab" data-bs-toggle="tab" data-bs-target="#principal" type="button" role="tab" aria-controls="home" aria-selected="true">Principal</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="javascript-tab" data-bs-toggle="tab" data-bs-target="#javascript" type="button" role="tab" aria-controls="profile" aria-selected="false">Javascript</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="react-tab" data-bs-toggle="tab" data-bs-target="#react" type="button" role="tab" aria-controls="contact" aria-selected="false">React</button>
-                </li>
-              </ul>
-              <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade show active" id="principal" role="tabpanel" aria-labelledby="home-tab">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="principal-tab" data-bs-toggle="tab" data-bs-target="#principal" type="button" role="tab" aria-controls="home" aria-selected="true">Principal</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="javascript-tab" data-bs-toggle="tab" data-bs-target="#javascript" type="button" role="tab" aria-controls="profile" aria-selected="false">Javascript</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="react-tab" data-bs-toggle="tab" data-bs-target="#react" type="button" role="tab" aria-controls="contact" aria-selected="false">React</button>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <!---------- PRINCIPAL TAB ------------>
+            <div class="tab-pane fade show active" id="principal" role="tabpanel" aria-labelledby="home-tab">
 
-                    <div class="row g-0 bg-dark bg-gradient position-relative mt-3">
-                        <div class="col-md-6 mb-md-0 p-md-4">
-                          <img class="portfolio-img" src="https://images.pexels.com/photos/5426409/pexels-photo-5426409.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="w-100" alt="...">
-                        </div>
-                        <div class="col-md-6 p-4 ps-md-0">
-                          <h3 class="mt-0 portfolio-title">Columns with stretched link</h3>
-                          <p class="portfolio-description" >Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
-                          <a href="#" class="btn btn-outline-primary">Go App</a>
-                        </div>                      
+                <div class="row g-0 position-relative mt-4 portfolio-card-bg">
+                    <div class="col-md-6 mb-md-0 p-md-4 img-container">
+                        <img class="portfolio-img" src="./assets/help-files/pokedex app.png" class="w-100" alt="poke app picture">
                     </div>
-
+                    <div class="col-md-6 p-4 ps-md-0">
+                        <h3 class="mt-0 portfolio-title">Poke app</h3>
+                        <p class="portfolio-description" >Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
+                        <a href="https://poke-app-v2.netlify.app/#/" target="_blank" class="btn btn-outline-primary">Go App</a>
+                    </div>                      
                 </div>
-                <div class="tab-pane fade" id="javascript" role="tabpanel" aria-labelledby="profile-tab">
 
-                    <div class="row g-0 position-relative mt-4 portfolio-card-bg">
-                        <div class="col-md-6 mb-md-0 p-md-4">
-                          <img class="portfolio-img" src="./assets/help-files/english teacher website.png" class="w-100" alt="website picture">
-                        </div>
-                        <div class="col-md-6 p-4 ps-md-0">
-                          <h3 class="mt-0 portfolio-title">English teacher website</h3>
-                          <p class="portfolio-description" >Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
-                          <a href="https://mrs-cristy.netlify.app/" target="_blank" class="btn btn-outline-primary">Go App</a>
-                        </div>                      
+                <div class="row g-0 position-relative mt-4 portfolio-card-bg">
+                    <div class="col-md-6 mb-md-0 p-md-4 img-container">
+                        <img class="portfolio-img" src="./assets/help-files/Rick and Morthy app.png" class="w-100" alt="rick and mothy png">
                     </div>
-
-                    <div class="row g-0 position-relative mt-4 portfolio-card-bg">
-                        <div class="col-md-6 mb-md-0 p-md-4">
-                          <img class="portfolio-img" src="./assets/help-files/cars crud app.png" class="w-100" alt="cars crud app picture">
-                        </div>
-                        <div class="col-md-6 p-4 ps-md-0">
-                          <h3 class="mt-0 portfolio-title">Simple CRUD app</h3>
-                          <p class="portfolio-description" >Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
-                          <a href="https://crud-cars-pcr.netlify.app/" target="_blank" class="btn btn-outline-primary">Go App</a>
-                        </div>                      
-                    </div>
-
-                    <div class="row g-0 position-relative mt-4 portfolio-card-bg">
-                        <div class="col-md-6 mb-md-0 p-md-4">
-                          <img class="portfolio-img" src="./assets/help-files/simple-clock.png" class="w-100" alt="simple clock picture">
-                        </div>
-                        <div class="col-md-6 p-4 ps-md-0">
-                          <h3 class="mt-0 portfolio-title">Simple clock app</h3>
-                          <p class="portfolio-description" >Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
-                          <a href="https://pcr-simple-clock.netlify.app/" target="_blank" class="btn btn-outline-primary">Go App</a>
-                        </div>                      
-                    </div>
-
+                    <div class="col-md-6 p-4 ps-md-0">
+                        <h3 class="mt-0 portfolio-title">Rick and morthy app</h3>
+                        <p class="portfolio-description" >Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
+                        <a href="https://rickandmorthy-appv2.netlify.app/" target="_blank" class="btn btn-outline-primary">Go App</a>
+                    </div>                      
                 </div>
-                <div class="tab-pane fade" id="react" role="tabpanel" aria-labelledby="contact-tab">
 
-                    <div class="row g-0 position-relative mt-4 portfolio-card-bg">
-                        <div class="col-md-6 mb-md-0 p-md-4">
-                          <img class="portfolio-img" src="./assets/help-files/Rick and Morthy app.png" class="w-100" alt="rick and mothy png">
-                        </div>
-                        <div class="col-md-6 p-4 ps-md-0">
-                          <h3 class="mt-0 portfolio-title">Rick and morthy app</h3>
-                          <p class="portfolio-description" >Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
-                          <a href="https://rickandmorthy-appv2.netlify.app/" target="_blank" class="btn btn-outline-primary">Go App</a>
-                        </div>                      
+            </div>
+            <!---------- JAVASCRIPT TAB------------>
+            <div class="tab-pane fade" id="javascript" role="tabpanel" aria-labelledby="profile-tab">
+
+                <div class="row g-0 position-relative mt-4 portfolio-card-bg">
+                    <div class="col-md-6 mb-md-0 p-md-4 img-container">
+                        <img class="portfolio-img" src="./assets/help-files/english teacher website.png" class="w-100" alt="website picture">
                     </div>
-
-                    <div class="row g-0 position-relative mt-4 portfolio-card-bg">
-                        <div class="col-md-6 mb-md-0 p-md-4">
-                          <img class="portfolio-img" src="./assets/help-files/simple weather app.png" class="w-100" alt="weather app png">
-                        </div>
-                        <div class="col-md-6 p-4 ps-md-0">
-                          <h3 class="mt-0 portfolio-title">Simple weather app</h3>
-                          <p class="portfolio-description" >Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
-                          <a href="https://weather-app-pcr.netlify.app/" target="_blank" class="btn btn-outline-primary">Go App</a>
-                        </div>                      
-                    </div>
-
-                    <div class="row g-0 position-relative mt-4 portfolio-card-bg">
-                        <div class="col-md-6 mb-md-0 p-md-4">
-                          <img class="portfolio-img" src="./assets/help-files/tic tac toe app.png" class="w-100" alt="weather app png">
-                        </div>
-                        <div class="col-md-6 p-4 ps-md-0">
-                          <h3 class="mt-0 portfolio-title">Tick tac toe game</h3>
-                          <p class="portfolio-description" >Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
-                          <a href="https://tictactoe-pcr-app.netlify.app/" target="_blank" class="btn btn-outline-primary">Go App</a>
-                        </div>                      
-                    </div>
-
-                    <div class="row g-0 position-relative mt-4 portfolio-card-bg">
-                        <div class="col-md-6 mb-md-0 p-md-4">
-                          <img class="portfolio-img" src="./assets/help-files/quotes app.png" class="w-100" alt="weather app png">
-                        </div>
-                        <div class="col-md-6 p-4 ps-md-0">
-                          <h3 class="mt-0 portfolio-title">Quotes app</h3>
-                          <p class="portfolio-description" >Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
-                          <a href="https://quotes-app-pcr.netlify.app/" target="_blank" class="btn btn-outline-primary">Go App</a>
-                        </div>                      
-                    </div>
-
+                    <div class="col-md-6 p-4 ps-md-0">
+                        <h3 class="mt-0 portfolio-title">English teacher website</h3>
+                        <p class="portfolio-description" >Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
+                        <a href="https://mrs-cristy.netlify.app/" target="_blank" class="btn btn-outline-primary">Go App</a>
+                    </div>                      
                 </div>
-              </div>
+
+                <div class="row g-0 position-relative mt-4 portfolio-card-bg">
+                    <div class="col-md-6 mb-md-0 p-md-4 img-container">
+                        <img class="portfolio-img" src="./assets/help-files/cars crud app.png" class="w-100" alt="cars crud app picture">
+                    </div>
+                    <div class="col-md-6 p-4 ps-md-0">
+                        <h3 class="mt-0 portfolio-title">Simple CRUD app</h3>
+                        <p class="portfolio-description" >Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
+                        <a href="https://crud-cars-pcr.netlify.app/" target="_blank" class="btn btn-outline-primary">Go App</a>
+                    </div>                      
+                </div>
+
+                <div class="row g-0 position-relative mt-4 portfolio-card-bg">
+                    <div class="col-md-6 mb-md-0 p-md-4 img-container">
+                        <img class="portfolio-img" src="./assets/help-files/simple-clock.png" class="w-100" alt="simple clock picture">
+                    </div>
+                    <div class="col-md-6 p-4 ps-md-0">
+                        <h3 class="mt-0 portfolio-title">Simple clock app</h3>
+                        <p class="portfolio-description" >Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
+                        <a href="https://pcr-simple-clock.netlify.app/" target="_blank" class="btn btn-outline-primary">Go App</a>
+                    </div>                      
+                </div>
+
+            </div>
+            <!---------- REACT TAB ------------>
+            <div class="tab-pane fade" id="react" role="tabpanel" aria-labelledby="contact-tab">
+
+                <div class="row g-0 position-relative mt-4 portfolio-card-bg">
+                    <div class="col-md-6 mb-md-0 p-md-4 img-container">
+                        <img class="portfolio-img" src="./assets/help-files/simple weather app.png" class="w-100" alt="weather app png">
+                    </div>
+                    <div class="col-md-6 p-4 ps-md-0">
+                        <h3 class="mt-0 portfolio-title">Simple weather app</h3>
+                        <p class="portfolio-description" >Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
+                        <a href="https://weather-app-pcr.netlify.app/" target="_blank" class="btn btn-outline-primary">Go App</a>
+                    </div>                      
+                </div>
+
+                <div class="row g-0 position-relative mt-4 portfolio-card-bg">
+                    <div class="col-md-6 mb-md-0 p-md-4 img-container">
+                        <img class="portfolio-img" src="./assets/help-files/tic tac toe app.png" class="w-100" alt="weather app png">
+                    </div>
+                    <div class="col-md-6 p-4 ps-md-0">
+                        <h3 class="mt-0 portfolio-title">Tick tac toe game</h3>
+                        <p class="portfolio-description" >Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
+                        <a href="https://tictactoe-pcr-app.netlify.app/" target="_blank" class="btn btn-outline-primary">Go App</a>
+                    </div>                      
+                </div>
+
+                <div class="row g-0 position-relative mt-4 portfolio-card-bg">
+                    <div class="col-md-6 mb-md-0 p-md-4 img-container">
+                        <img class="portfolio-img" src="./assets/help-files/quotes app.png" class="w-100" alt="weather app png">
+                    </div>
+                    <div class="col-md-6 p-4 ps-md-0">
+                        <h3 class="mt-0 portfolio-title">Quotes app</h3>
+                        <p class="portfolio-description" >Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
+                        <a href="https://quotes-app-pcr.netlify.app/" target="_blank" class="btn btn-outline-primary">Go App</a>
+                    </div>                      
+                </div>
+
+            </div>
         </div>
     </section>
 
     <!--Education-->
-    <section class="education mt-5" id="education">
-            <div class="card-education" id="htmlCard">
+    <section class="education mt-5 container" id="education">
+        <div class="col-4 card-pos">
+            <div class="card-education">
                 <div class="header-card-education">
                     <i class="fab fa-html5 icon-education mb-3"></i>
                     <h3 class="text-center">HTML 5</h3>
                 </div>
             </div>
-        
-            <div class="card-education" id="cssCard">
+        </div>
+
+        <div class="col-4 card-pos">    
+            <div class="card-education">
                 <div class="header-card-education">
                     <i class="fab fa-css3-alt icon-education mb-3"></i>                  
                     <h3 class="text-center">CSS 3</h3>
                 </div>
             </div>
+        </div>
 
-            <div class="card-education" id="bootCard">
+        <div class="col-4 card-pos">            
+            <div class="card-education">
                 <div class="header-card-education">
                     <i class="fab fa-bootstrap icon-education mb-3"></i>
                     <h3 class="text-center"> Bootstrap </h3>
                 </div>
             </div>
-            
-            <div class="card-education" id="jsCard">
+        </div>
+
+        <div class="col-4 card-pos">
+            <div class="card-education">
                 <div class="header-card-education">
                     <i class="fab fa-js icon-education mb-3"></i>
                     <h3 class="text-center">Java Script</h3>
                 </div>
             </div>
+        </div>
 
-            <div class="card-education" id="reactCard">                
+        <div class="col-4 card-pos">
+            <div class="card-education">                
                 <div class="header-card-education">
                     <i class="fab fa-react icon-education mb-3"></i>            
                     <h3 class="text-center">React</h3>
                 </div>
             </div>
+        </div>
 
+        <div class="col-4 card-pos">
             <div class="card-education">
                 <div class="header-card-education">                
                     <i class="fas fa-tools icon-education mb-3"></i>
                     <h3 class="text-center">Computer repair</h3>
                 </div>
             </div>
-
         </div>
+    
     </section>
 
     <script src="./assets/script/js.js"></script>

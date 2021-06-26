@@ -1,5 +1,6 @@
 .portfolio {
     margin: 0 100px;
+    position: relative;
 }
 
 .img-container {

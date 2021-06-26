@@ -21,7 +21,6 @@
 }
 
 /* -----------ICONS ANIMATION------------- */
-
 .icon-box-github {
     width: 50px;
     height: 50px;
@@ -76,4 +75,18 @@
 .linkedin-icon:hover {
     color: #FDFAF6;
     transition: 1s;
+}
+
+/*----------------- EDUCATION ANIMATION ---------------*/
+
+.header-transition  {
+    animation-duration: 1s;
+    animation-name: headerMove;
+}
+
+@keyframes headerMove {
+    to {
+        margin-bottom: 150px;
+        position: absolute;
+    }
 }

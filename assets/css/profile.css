@@ -1,16 +1,16 @@
 .profile {
-    height: 100vh;
+    padding: 150px 0;
+    height: 100%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
 }
 
 .profile-card {
-    width: 1000px;
+    width: 80%;
     padding: 10px;
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
     border: solid;
     border-radius: 20px;
@@ -22,8 +22,8 @@
 }
 
 .profile-picture {
-    height: 330px;
-    width: 330px;
+    height: 230px;
+    width: 230px;
     background-color: #adadad;
     background-image: url('../help-files/personal/pp.jpg');
     background-size: cover;
@@ -38,10 +38,13 @@
 }
 
 .profile-description {
-    font-size: 23px;
+    margin: 5px 0;
+    font-size: 18px;
+    text-align: justify;
 }
 
 .icons-tab {
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;

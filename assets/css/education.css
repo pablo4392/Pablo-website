@@ -1,7 +1,19 @@
+/* meter::-webkit-meter-bar {background: red;} */
+meter::-webkit-meter-optimum-value {background: #01937C;}
+
+meter{
+    width: 70%;
+    height: 20px;
+}
+
+.knowledge {
+    width: 100%;
+    text-align: center;
+}
+
 .education {
     height: 100vh;
     padding: 20px;
-    /* position: relative; */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -13,8 +25,8 @@
 }
 
 .card-education {
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
     margin: 20px;
     padding: 15px;
     display: flex;

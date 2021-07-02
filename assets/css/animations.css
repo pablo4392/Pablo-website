@@ -76,17 +76,3 @@
     color: #FDFAF6;
     transition: 1s;
 }
-
-/*----------------- EDUCATION ANIMATION ---------------*/
-
-.header-transition  {
-    animation-duration: 1s;
-    animation-name: headerMove;
-}
-
-@keyframes headerMove {
-    to {
-        margin-bottom: 150px;
-        position: absolute;
-    }
-}

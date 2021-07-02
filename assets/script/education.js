@@ -1,18 +1,6 @@
 const htmlCard = document.getElementById('htmlComponent');
-const htmlHeader = document.getElementById('htmlHeader')
 const htmlBody = document.getElementById('htmlBody');
 
-htmlCard.addEventListener('mouseover', () => {
-    htmlHeader.classList.add('header-transition')
-    htmlBody.classList.remove('hide')
-
-})
-htmlCard.addEventListener('mouseout', () => {
-    htmlHeader.classList.remove('header-transition')
-    htmlBody.classList.add('hide')
-})
-
-// OTHERS
 const cssCard = document.getElementById('cssComponent');
 const cssBody = document.getElementById('cssBody');
 
@@ -25,9 +13,15 @@ const jsBody = document.getElementById('jsBody');
 const reactCard = document.getElementById('reactComponent');
 const reactBody = document.getElementById('reactBody');
 
-
 const fixCard = document.getElementById('fixComponent');
 const fixBody = document.getElementById('fixBody');
+
+htmlCard.addEventListener('mouseover', () => {
+    htmlBody.classList.remove('hide')
+})
+htmlCard.addEventListener('mouseout', () => {
+    htmlBody.classList.add('hide')
+})
 
 cssCard.addEventListener('mouseover', () => {
     cssBody.classList.remove('hide')

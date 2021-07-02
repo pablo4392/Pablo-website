@@ -22,10 +22,10 @@
 }
 
 .my-logo {
-    margin-left: 50px;
     color: #03256c;
     font-size: 40px;
     font-family: 'Staatliches', cursive;
+    display: block;
 }
 
 .my-name {

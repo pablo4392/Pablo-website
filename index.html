@@ -17,9 +17,9 @@
 </head>
 <body class="body-page">
     <!--Header-->
-    <section class="header" id="header">
+    <div class="header" id="header">
         <div class="banner">
-            <div class="col-6 logo-box">
+            <div class="logo-box col-6">
                 <div class="my-logo">
                     <i class="fab fa-d-and-d logo-icon"></i>
                     <span class="my-name">PABLO</span>CR
@@ -44,23 +44,31 @@
             </ul>
         </div>
         <div class="overlay">
+            <!-- <div class="first-title"> -->
             <div class="typing-effect first-title">
                 I AM A<span class="web-color"> WEB DEVELOPER </span>
             </div>
         </div>
-    </section>
+    </div>
 
     <!--Profile-->
-    <section class="profile" id="profile">
+    <div class="profile" id="profile">
         <div class="profile-card">
             <div class="col-4 pic-section">
                 <div class="profile-picture"></div>
             </div>
             <div class="col-8 body-profile">
                 <p class="profile-description">
-                    Hi! my name is Pablo Carreño I am a web developer from Mexico, Puebla city.
+                    Hello, my name is Pablo Carreño and I am a web developer specialized in frontend from Puebla Mexico.
+                </p>    
+                <p class="profile-description">
+                    I have extensive knowledge of HTML, CSS and Javascript web programming and React framework.
                 </p>
-                <div class="icons-tab mt-3 mb-3">                    
+                <p class="profile-description">
+                    Extremely committed to personal and professional development. Proactive and always offering improvement in each project to which it is entrusted.
+                </p>
+                <div class="icons-tab mt-3 mb-3">
+                    <a class="btn btn-outline-light btn-sm" target="_blank" href="./assets/help-files/personal/CV PABLO CARREÑO.pdf">Personal CV</a>                 
                     <a class="icon-box-github" target="_blank" href="https://github.com/pablo4392?tab=repositories">
                         <i class="fab fa-github github-icon"></i>
                     </a>                    
@@ -68,17 +76,12 @@
                         <i class="fab fa-linkedin-in linkedin-icon"></i>
                     </a>
                 </div>
-                <div class="btn-group" role="group" aria-label="Basic outlined example">
-                    <a class="btn btn-outline-light" target="_blank" href="./assets/help-files/personal/CV PABLO CARREÑO.pdf">Personal CV</a>
-                    <a class="btn btn-outline-light" target="_blank" href="./assets/help-files/personal/html certificacion.pdf">HTML certification</a>
-                    <a class="btn btn-outline-light" target="_blank" href="./assets/help-files/personal/css certificacion.pdf">CSS certification</a>
-                </div>
             </div>
-        </div>        
-    </section>
+        </div>    
+    </div>
 
     <!-- Portfolio -->
-    <section class="portfolio" id="portfolio">
+    <div class="portfolio" id="portfolio">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
                 <button class="nav-link active" id="principal-tab" data-bs-toggle="tab" data-bs-target="#principal" type="button" role="tab" aria-controls="home" aria-selected="true">Principal</button>
@@ -101,7 +104,8 @@
                     <div class="col-md-6 p-4 ps-md-0">
                         <h3 class="mt-0 portfolio-title">Poke app</h3>
                         <div class="portfolio-description">
-                            
+                            <p>In this app I have used the famous Pokeapi, it can show all pokemons existing at present.</p>
+                            <p>To start application you should write your name or at least a nickname, it show you all pokemons organized by id, if you wish, you can use th filters to see a particular pokemon or see all pokemos by type.</p>
                         </div>
                         <!-- <a href="https://poke-app-v2.netlify.app/#/" target="_blank" class="btn btn-outline-primary">Go App</a> -->
                     </div>                      
@@ -115,11 +119,24 @@
                         <h3 class="mt-0 portfolio-title">Rick and morthy app</h3>
                         <div class="portfolio-description">
                             <p>This application was developed with API data. It can show you all the existing characters in each universe of the Rick and Morty series.</p>
-                            <p>When you start the app, it shows you a random universe (some universes don't have any characters).</p>
+                            <p>When starts the application, it shows you a random universe (some universes do not have any characters) and it will show you ten characters from it.</p>
                         </div>
-                        <!-- <a href="https://rickandmorthy-appv2.netlify.app/" target="_blank" class="btn btn-outline-primary">Go App</a> -->
+                        <a href="https://rickandmorthy-appv2.netlify.app/" target="_blank" class="btn btn-outline-primary">Go App</a>
                     </div>                      
                 </div>
+
+                <!-- <div class="row g-0 position-relative mt-4 portfolio-card-bg">
+                    <div class="col-md-6 mb-md-0 p-md-4 img-container">
+                        <img class="portfolio-img" src="" class="w-100" alt="trivia app ">
+                    </div>
+                    <div class="col-md-6 p-4 ps-md-0">
+                        <h3 class="mt-0 portfolio-title">Trivia game</h3>
+                        <div class="portfolio-description">
+                            <p>This appp is a siple trivia game developed to an API with questions </p>
+                        </div>
+                        <a href="" target="_blank" class="btn btn-outline-primary">Go App</a>
+                    </div>                      
+                </div> -->
 
             </div>
             <!---------- JAVASCRIPT TAB------------>
@@ -146,9 +163,10 @@
                     <div class="col-md-6 p-4 ps-md-0">
                         <h3 class="mt-0 portfolio-title">Notes App</h3>
                         <div class="portfolio-description">
-                            <p>  </p>
+                            <p>This application simulates a board where you can put different notes. </p>
+                            <p>You only have to write a name and a message, if you wish, you can choose a color for your publication. Each post will be saved with the creation date.</p>
                         </div>
-                        <a href="https://tasks-app-pcr.netlify.app/" target="_blank" class="btn btn-outline-primary">Go App</a>
+                        <a href="https://pcr-notes-app.netlify.app/" target="_blank" class="btn btn-outline-primary">Go App</a>
                     </div>                      
                 </div>
 
@@ -227,25 +245,30 @@
 
             </div>
         </div>
-    </section>
+    </div>
 
     <!--Education-->
-    <section class="education mt-5 container" id="education">
-        <div class="col-4 card-pos" id="htmlComponent">                    
+    <div class="education mt-5 container" id="education">
+
+        <div class="col-4 card-pos" id="htmlComponent">                     
             <div class="card-education">
-                <div class="header-card-education" id="htmlHeader">
-                    <i class="fab fa-html5 mb-3 icon-education"></i>
-                    <h3> HTML 5</h3>
+                <div class="header-card-education">
+                    <i class="fab fa-html5 icon-education mb-3"></i>
+                    <h3 class="text-center"> HTML 5</h3>
                 </div>
                 <div class="body-card-education hide mt-1" id="htmlBody">
                     <p class="description-card-education">
-                        Lorem ipsum dolor sit amet consectetur 
-                        adipisicing elit. Quas at consequuntur 
-                        quam magni dolor.
+                        This is the main technology used for web development, so I have a certification.
                     </p>
+                    <a class="btn btn-outline-primary btn-sm" href="./assets/help-files/personal/html certificacion.pdf">Certification</a>
+                    <div class="knowledge">
+                        <h6>Knowledge</h6>
+                        <meter min="0" max="100" value="90"></meter> 90%
+                    </div>
                 </div>
             </div>
         </div>
+
         <div class="col-4 card-pos" id="cssComponent">    
             <div class="card-education">
                 <div class="header-card-education">
@@ -254,13 +277,17 @@
                 </div>
                 <div class="body-card-education hide mt-1" id="cssBody">
                     <p class="description-card-education">
-                        Lorem ipsum dolor sit amet consectetur 
-                        adipisicing elit. Quas at consequuntur 
-                        quam magni dolor.
+                        Another of the main technologies for web development, in the same way as with a certificate.
                     </p>
+                    <a class="btn btn-outline-primary btn-sm" href="./assets/help-files/personal/css certificacion.pdf">Certification</a>
+                    <div class="knowledge">
+                        <h6>Knowledge</h6>
+                        <meter min="0" max="100" value="85"></meter> 85%
+                    </div>
                 </div>
             </div>
         </div>
+
         <div class="col-4 card-pos" id="bootstrapComponent">            
             <div class="card-education">
                 <div class="header-card-education">
@@ -269,13 +296,16 @@
                 </div>
                 <div class="body-card-education hide mt-1" id="bootstrapBody">
                     <p class="description-card-education">
-                        Lorem ipsum dolor sit amet consectetur 
-                        adipisicing elit. Quas at consequuntur 
-                        quam magni dolor.
+                        Basic knowledge in the use of this library, which facilitates the use of components and make responsive designs.
                     </p>
+                    <div class="knowledge">
+                        <h6>Knowledge</h6>
+                        <meter min="0" max="100" value="60"></meter> 60%
+                    </div>
                 </div>
             </div>
         </div>
+
         <div class="col-4 card-pos" id="jsComponent">
             <div class="card-education">
                 <div class="header-card-education">
@@ -284,13 +314,16 @@
                 </div>
                 <div class="body-card-education hide mt-1" id="jsBody">
                     <p class="description-card-education">
-                        Lorem ipsum dolor sit amet consectetur 
-                        adipisicing elit. Quas at consequuntur 
-                        quam magni dolor.
+                        This is the main programming language that I master and which I have striven to improve my skills.
                     </p>
+                    <div class="knowledge">
+                        <h6>Knowledge</h6>
+                        <meter min="0" max="100" value="80"></meter> 80%
+                    </div>
                 </div>
             </div>
         </div>
+
         <div class="col-4 card-pos" id="reactComponent">
             <div class="card-education">                
                 <div class="header-card-education">
@@ -299,13 +332,16 @@
                 </div>
                 <div class="body-card-education hide mt-1" id="reactBody">
                     <p class="description-card-education">
-                        Lorem ipsum dolor sit amet consectetur 
-                        adipisicing elit. Quas at consequuntur 
-                        quam magni dolor.
+                        Being one of the most popular frameworks, I have acquired extensive knowledge of its advantages and use.
                     </p>
+                    <div class="knowledge">
+                        <h6>Knowledge</h6>
+                        <meter min="0" max="100" value="82"></meter> 82%
+                    </div>
                 </div>
             </div>
         </div>
+
         <div class="col-4 card-pos" id="fixComponent">
             <div class="card-education">
                 <div class="header-card-education">                
@@ -314,17 +350,19 @@
                 </div>
                 <div class="body-card-education hide mt-1" id="fixBody">
                     <p class="description-card-education">
-                        Lorem ipsum dolor sit amet consectetur 
-                        adipisicing elit. Quas at consequuntur 
-                        quam magni dolor.
+                        I have knowledge basic of maintenance and repair of computer equipment, 
+                        since component change to formatting of different operating systems.
                     </p>
+                    <div class="knowledge">
+                        <meter min="0" max="100" value="87"></meter> 87%
+                    </div>
                 </div>
             </div>
-        </div>   
-    </section>
+        </div>  
+
+    </div>
 
     <script src="./assets/script/education.js"></script>
-    <script src="./assets/script/js.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </body>
 </html>

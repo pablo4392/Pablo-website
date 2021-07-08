@@ -19,32 +19,31 @@
     <!--Header-->
     <div class="header" id="header">
         <div class="banner">
-            <div class="logo-box col-6">
+            <div class="logo-box col-lg-4 col-sm-12">
                 <div class="my-logo">
                     <i class="fab fa-d-and-d logo-icon"></i>
                     <span class="my-name">PABLO</span>CR
                 </div>
             </div>
-            <ul class='menu col-6' id="menu">
-                <li>
+            <span class='menu col-lg-8 col-sm-12' id="menu">
+                <div>
                     <a href="#profile" class="navigation">
                         About me
                     </a>
-                </li>
-                <li>
+                </div>
+                <div>
                     <a href="#portfolio" class="navigation">
                         Portfolio
                     </a>
-                </li>
-                <li>
+                </div>
+                <div>
                     <a href="#education" class="navigation">
                         Education
                     </a>
-                </li>
-            </ul>
+                </div>
+            </span>
         </div>
         <div class="overlay">
-            <!-- <div class="first-title"> -->
             <div class="typing-effect first-title">
                 I AM A<span class="web-color"> WEB DEVELOPER </span>
             </div>
@@ -55,7 +54,7 @@
     <div class="profile" id="profile">
         <div class="profile-card my-5">
             <div class="col-lg-4 col-md-4 col-sm-12 pic-section">
-                <div class="profile-picture"></div>
+                <img class="profile-picture" src="./assets/help-files/personal/pp.jpg" alt="profilepicture">
             </div>
             <div class="col-lg-8 col-md-8 col-sm-12 body-profile">
                 <p class="profile-description">
@@ -69,11 +68,13 @@
                 </p>             
             </div>
             <div class="icons-tab mt-3 mb-3">
-                <a class="btn btn-outline-primary btn-md" target="_blank" href="./assets/help-files/personal/CV PABLO CARREÑO.pdf">Personal CV</a>                 
-                <a class="icon-box-github" target="_blank" href="https://github.com/pablo4392?tab=repositories">
+                <a class="icon-box-cv" title="Curriculum" target="_blank" href="./assets/help-files/personal/CV PABLO CARREÑO.pdf">
+                    <i class="far fa-id-card"></i>
+                </a>
+                <a class="icon-box-github" title="Github" target="_blank" href="https://github.com/pablo4392?tab=repositories">
                     <i class="fab fa-github github-icon"></i>
                 </a>                    
-                <a class="icon-box-linkedin" target="_blank" href="https://www.linkedin.com/in/pablo-carre%C3%B1o-ram%C3%ADrez-aa381411a/">
+                <a class="icon-box-linkedin" title="LinkedIn" target="_blank" href="https://www.linkedin.com/in/pablo-carre%C3%B1o-ram%C3%ADrez-aa381411a/">
                     <i class="fab fa-linkedin-in linkedin-icon"></i>
                 </a>
             </div>
@@ -166,7 +167,7 @@
                             <p>This application simulates a board where you can put different notes. </p>
                             <p>You only have to write a name and a message, if you wish, you can choose a color for your publication. Each post will be saved with the creation date.</p>
                         </div>
-                        <a href="https://pcr-notes-app.netlify.app/" target="_blank" class="btn btn-outline-primary">Go App</a>
+                        <!-- <a href="https://pcr-notes-app.netlify.app/" target="_blank" class="btn btn-outline-primary">Go App</a> -->
                     </div>                      
                 </div>
 
@@ -250,13 +251,14 @@
     <!--Education-->
     <div class="education mt-5 container" id="education">
 
-        <div class="col-4 card-pos" id="htmlComponent">                     
+        <div class="col-sm-4 col-md-4 col-lg-4 card-pos ">
             <div class="card-education">
-                <div class="header-card-education">
-                    <i class="fab fa-html5 icon-education mb-3"></i>
+                <div class="header-card-education mb-4">
+                    <i class="fab fa-html5 mb-2"></i>
                     <h3 class="text-center"> HTML 5</h3>
                 </div>
-                <div class="body-card-education hide mt-1" id="htmlBody">
+
+                <div class="body-card-education mt-1" id="htmlBody">
                     <p class="description-card-education">
                         This is the main technology used for web development, so I have a certification.
                     </p>
@@ -269,13 +271,14 @@
             </div>
         </div>
 
-        <div class="col-4 card-pos" id="cssComponent">    
+        <div class="col-sm-4 col-md-4 col-lg-4 card-pos">
             <div class="card-education">
-                <div class="header-card-education">
-                    <i class="fab fa-css3-alt icon-education mb-3"></i>                  
+                <div class="header-card-education mb-4">
+                    <i class="fab fa-css3-alt mb-2"></i>                  
                     <h3 class="text-center">CSS 3</h3>
                 </div>
-                <div class="body-card-education hide mt-1" id="cssBody">
+
+                <div class="body-card-education mt-1" id="cssBody">
                     <p class="description-card-education">
                         Another of the main technologies for web development, in the same way as with a certificate.
                     </p>
@@ -288,12 +291,13 @@
             </div>
         </div>
 
-        <div class="col-4 card-pos" id="bootstrapComponent">            
+        <div class="col-sm-4 col-md-4 col-lg-4 card-pos">
             <div class="card-education">
-                <div class="header-card-education">
-                    <i class="fab fa-bootstrap icon-education mb-3"></i>
+                <div class="header-card-education mb-4">
+                    <i class="fab fa-bootstrap mb-2"></i>
                     <h3 class="text-center"> Bootstrap </h3>
                 </div>
+
                 <div class="body-card-education hide mt-1" id="bootstrapBody">
                     <p class="description-card-education">
                         Basic knowledge in the use of this library, which facilitates the use of components and make responsive designs.
@@ -306,12 +310,13 @@
             </div>
         </div>
 
-        <div class="col-4 card-pos" id="jsComponent">
+        <div class="col-sm-4 col-md-4 col-lg-4 card-pos">
             <div class="card-education">
-                <div class="header-card-education">
-                    <i class="fab fa-js icon-education mb-3"></i>
+                <div class="header-card-education mb-4">
+                    <i class="fab fa-js mb-2"></i>
                     <h3 class="text-center">Java Script</h3>
                 </div>
+
                 <div class="body-card-education hide mt-1" id="jsBody">
                     <p class="description-card-education">
                         This is the main programming language that I master and which I have striven to improve my skills.
@@ -324,14 +329,15 @@
             </div>
         </div>
 
-        <div class="col-4 card-pos" id="reactComponent">
-            <div class="card-education">                
-                <div class="header-card-education">
-                    <i class="fab fa-react icon-education mb-3"></i>            
+        <div class="col-sm-4 col-md-4 col-lg-4 card-pos">
+            <div class="card-education">
+                <div class="header-card-education mb-4">
+                    <i class="fab fa-react mb-2"></i>            
                     <h3 class="text-center">React</h3>
                 </div>
-                <div class="body-card-education hide mt-1" id="reactBody">
-                    <p class="description-card-education">
+
+                <div class="body-card-education mt-1" id="reactBody">
+                    <p>
                         Being one of the most popular frameworks, I have acquired extensive knowledge of its advantages and use.
                     </p>
                     <div class="knowledge">
@@ -342,13 +348,14 @@
             </div>
         </div>
 
-        <div class="col-4 card-pos" id="fixComponent">
+        <div class="col-sm-4 col-md-4 col-lg-4 card-pos">
             <div class="card-education">
-                <div class="header-card-education">                
-                    <i class="fas fa-tools icon-education mb-3"></i>
+                <div class="header-card-education mb-4">                
+                    <i class="fas fa-tools mb-2"></i>
                     <h3 class="text-center">Computer repair</h3>
                 </div>
-                <div class="body-card-education hide mt-1" id="fixBody">
+
+                <div class="body-card-education mt-1" id="fixBody">
                     <p class="description-card-education">
                         I have knowledge basic of maintenance and repair of computer equipment, 
                         since component change to formatting of different operating systems.
@@ -358,11 +365,11 @@
                     </div>
                 </div>
             </div>
-        </div>  
-
+        </div>
+            
     </div>
 
-    <script src="./assets/script/education.js"></script>
+    <!-- <script src="./assets/script/education.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </body>
 </html>

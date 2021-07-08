@@ -58,11 +58,23 @@
 
 .first-title {
     margin: 0;
-    font-size: 80px;
+    margin-bottom: 50px;
+    font-size: 60px;
     color: #03256c;
     text-align: center;
+    font-family: 'Staatliches', cursive;
 }
 
 .web-color {
     color: #eba83a;
+}
+
+@media(min-width: 576px) {
+    .first-title {
+        margin: 0;
+        font-size: 80px;
+        color: #03256c;
+        text-align: center;
+        font-family: monospace;
+    }
 }

@@ -23,19 +23,25 @@
 
 .header-card-education {
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 40px;
+    font-size: 60px;
 }
 
 .text-center {
     font-size: 25px;
-    margin-left: 15px;
+    margin: 0;
 }
 
 .body-card-education {
     text-align: justify;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 meter::-webkit-meter-optimum-value {background: #01937C;}

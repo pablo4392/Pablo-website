@@ -103,3 +103,59 @@
 }
 
 /*------------------- EDUCATION -------------------*/
+@media (min-width: 992px) {
+    .card-education {
+        width: 330px;
+        height: 330px;
+        margin: 10px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: solid;
+        border-radius: 50%;
+        transform: rotate(180deg);
+        transition: all 2s;
+    }
+
+    .header-card-education {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 80px;
+        transform: rotate(180deg);
+    }
+
+    .text-center {
+        font-size: 40px;
+        margin: 0;
+        font-family: 'Righteous', cursive;
+    }
+
+    .body-card-education {
+        text-align: justify;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .body-icon {
+        font-size: 50px;
+    }
+
+    .card-education:hover {
+        border-radius: 3%;
+        box-shadow: 0px 0px 15px 15px #FEFBF3;
+        transform: rotate(360deg);
+        transition: all 1s;
+    }
+
+    .hide {
+        display: none;
+    }
+}
